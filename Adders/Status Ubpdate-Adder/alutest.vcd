@@ -1,0 +1,93 @@
+$date
+	Sun Sep 17 20:20:27 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module alutest $end
+$var wire 1 ! carry $end
+$var wire 1 " zero $end
+$var wire 16 # z [15:0] $end
+$var wire 1 $ sign $end
+$var wire 1 % parity $end
+$var wire 1 & overflow $end
+$var reg 16 ' x [15:0] $end
+$var reg 16 ( y [15:0] $end
+$scope module alu1 $end
+$var wire 1 ! carry $end
+$var wire 1 & overflow $end
+$var wire 16 ) x [15:0] $end
+$var wire 16 * y [15:0] $end
+$var wire 1 " zero $end
+$var wire 16 + z [15:0] $end
+$var wire 1 $ sign $end
+$var wire 1 % parity $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+bx )
+bx (
+bx '
+x&
+x%
+x$
+bx #
+x"
+x!
+$end
+#50
+0!
+0&
+1$
+0"
+0%
+b1000111111111111 #
+b1000111111111111 +
+b0 (
+b0 *
+b1000111111111111 '
+b1000111111111111 )
+#100
+0&
+0$
+1"
+1%
+b0 #
+b0 +
+b0 '
+b0 )
+#150
+1&
+1!
+0"
+0%
+b111111111111111 #
+b111111111111111 +
+b1000000000000000 (
+b1000000000000000 *
+b1111111111111111 '
+b1111111111111111 )
+#200
+0&
+1$
+b1111111111111110 #
+b1111111111111110 +
+b1111111111111111 (
+b1111111111111111 *
+#250
+0!
+1%
+b1111111111111111 #
+b1111111111111111 +
+b1111000000000000 (
+b1111000000000000 *
+b111111111111 '
+b111111111111 )
+#300
