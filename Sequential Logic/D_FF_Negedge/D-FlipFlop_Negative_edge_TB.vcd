@@ -1,0 +1,87 @@
+$date
+	Sat Sep 23 17:29:34 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module DFF_negedge_TB $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$var reg 1 # CLK $end
+$var reg 1 $ D $end
+$scope module DFF_negedge_0 $end
+$var wire 1 # CLK $end
+$var wire 1 $ D $end
+$var reg 1 " Q $end
+$var reg 1 ! Qbar $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0#
+0"
+1!
+$end
+#500
+1#
+#1000
+0!
+1"
+0#
+1$
+#1500
+1#
+#2000
+1!
+0"
+0#
+0$
+#2500
+1#
+#3000
+0!
+1"
+0#
+1$
+#3500
+1#
+#4000
+1!
+0"
+0#
+0$
+#4500
+1#
+#5000
+0!
+1"
+0#
+1$
+#5500
+1#
+#6000
+1!
+0"
+0#
+0$
+#6500
+1#
+#7000
+0#
+#7500
+1#
+#8000
+0#
+#8500
+1#
+#9000
+0#
+#9500
+1#
+#10000
+0#
