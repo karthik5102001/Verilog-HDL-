@@ -1,0 +1,121 @@
+$date
+	Sat Sep 23 18:25:42 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Bit_AlU_tb $end
+$var wire 4 ! f [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var reg 2 $ op [1:0] $end
+$scope module DUT $end
+$var wire 4 % a [3:0] $end
+$var wire 4 & b [3:0] $end
+$var wire 2 ' op [1:0] $end
+$var reg 4 ( f [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1 !
+b1 (
+b1 #
+b1 &
+#20
+b0 #
+b0 &
+b1 "
+b1 %
+#30
+b10 !
+b10 (
+b1 #
+b1 &
+#40
+b0 !
+b0 (
+b1 $
+b1 '
+b0 #
+b0 &
+b0 "
+b0 %
+#50
+b1111 !
+b1111 (
+b1 #
+b1 &
+#60
+b1 !
+b1 (
+b0 #
+b0 &
+b1 "
+b1 %
+#70
+b0 !
+b0 (
+b1 #
+b1 &
+#80
+b10 $
+b10 '
+b0 #
+b0 &
+b0 "
+b0 %
+#90
+b1 #
+b1 &
+#100
+b0 #
+b0 &
+b1 "
+b1 %
+#110
+b1 !
+b1 (
+b1 #
+b1 &
+#120
+bx !
+bx (
+b11 $
+b11 '
+b0 #
+b0 &
+b0 "
+b0 %
+#130
+b0 !
+b0 (
+b1 #
+b1 &
+#140
+bx !
+bx (
+b0 #
+b0 &
+b1 "
+b1 %
+#150
+b1 !
+b1 (
+b1 #
+b1 &
+#160
