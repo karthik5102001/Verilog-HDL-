@@ -15,15 +15,11 @@ module tb;
     clk = 0;  
   
     $monitor ("[T=%0t] clk=%0b d=%0b q=%0b", $time, clk, d, q);  
-  
-    #10;   
-  
     for (i = 0; i < 10; i = i+1) begin  
       dly = $random;  
       repeat(dly) @(posedge clk);  
       d <= $random;  
     end  
-  
     #20 $finish;  
   end  
 endmodule  

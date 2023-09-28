@@ -1,0 +1,63 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "D:\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iverilog\lib\ivl\va_math.vpi";
+S_0000024dacaeec70 .scope module, "tff" "tff" 2 3;
+ .timescale -11 -12;
+UDP_TFF .udp/sequ "TFF", 2, 2
+ ,"??10"
+ ,"??f-"
+ ,"1f00"
+ ,"0f01"
+ ,"?P0-";
+L_0000024dac973380 .udp UDP_TFF, v0000024dacae83f0_0, v0000024dacaeee00_0;
+v0000024dacae83f0_0 .var "clk", 0 0;
+v0000024dacaeee00_0 .var "clr", 0 0;
+v0000024dacaeeea0_0 .var/i "i", 31 0;
+v0000024dacaeadb0_0 .net "q", 0 0, L_0000024dac973380;  1 drivers
+    .scope S_0000024dacaeec70;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "TFF_tb.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000024dacaeec70 {0 0 0};
+    %vpi_call 2 11 "$monitor", "[T=%0t] clock=%0d clear=%0d output=%0d", $time, v0000024dacae83f0_0, v0000024dacaeee00_0, v0000024dacaeadb0_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000024dacae83f0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000024dacaeee00_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000024dacaeee00_0, 0, 1;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000024dacaeeea0_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0000024dacaeeea0_0;
+    %cmpi/s 10, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000024dacae83f0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000024dacae83f0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000024dacae83f0_0, 0, 1;
+    %load/vec4 v0000024dacaeeea0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0000024dacaeeea0_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %delay 1000, 0;
+    %vpi_call 2 20 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    ".\TFF_tb.v";
