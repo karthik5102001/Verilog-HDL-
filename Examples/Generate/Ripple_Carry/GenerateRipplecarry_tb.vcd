@@ -1,0 +1,183 @@
+$date
+	Thu Sep 28 20:18:33 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module GenerateRipplecarry_tb $end
+$var wire 8 ! sum_out [7:0] $end
+$var wire 1 " carry_out $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % carry_in $end
+$scope module dut $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 1 % carry_in $end
+$var wire 8 ( sum_out [7:0] $end
+$var wire 1 " carry_out $end
+$var wire 9 ) carry [8:0] $end
+$scope begin genblk1[0] $end
+$var wire 1 * t1 $end
+$var wire 1 + t2 $end
+$var wire 1 , t3 $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var wire 1 - t1 $end
+$var wire 1 . t2 $end
+$var wire 1 / t3 $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var wire 1 0 t1 $end
+$var wire 1 1 t2 $end
+$var wire 1 2 t3 $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var wire 1 3 t1 $end
+$var wire 1 4 t2 $end
+$var wire 1 5 t3 $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var wire 1 6 t1 $end
+$var wire 1 7 t2 $end
+$var wire 1 8 t3 $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var wire 1 9 t1 $end
+$var wire 1 : t2 $end
+$var wire 1 ; t3 $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var wire 1 < t1 $end
+$var wire 1 = t2 $end
+$var wire 1 > t3 $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var wire 1 ? t1 $end
+$var wire 1 @ t2 $end
+$var wire 1 A t3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#100
+b10 !
+b10 (
+b10 )
+1+
+b1 $
+b1 '
+b1 #
+b1 &
+#200
+b100 !
+b100 (
+b100 )
+0+
+1.
+b10 $
+b10 '
+b10 #
+b10 &
+#300
+b110 !
+b110 (
+b110 )
+1+
+b11 $
+b11 '
+b11 #
+b11 &
+#400
+b10110 !
+b10110 (
+b10110 )
+14
+b1011 $
+b1011 '
+b1011 #
+b1011 &
+#500
+b101100 !
+b101100 (
+b101100 )
+0+
+11
+04
+17
+b10110 $
+b10110 '
+b10110 #
+b10110 &
+#600
+b1000000 !
+b1000000 (
+b1000000 )
+0.
+01
+07
+1:
+b100000 $
+b100000 '
+b100000 #
+b100000 &
+#700
+b1000001 !
+b1000001 (
+b1000001 )
+1%
+#800
+b100001 !
+b100001 (
+b1 )
+19
+0:
+b0 $
+b0 '
+#900
+b11 )
+b100010 !
+b100010 (
+1,
+1*
+b1 $
+b1 '
