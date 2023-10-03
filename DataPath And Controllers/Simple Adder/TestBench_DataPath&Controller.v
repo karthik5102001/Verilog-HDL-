@@ -11,17 +11,17 @@ initial
 begin
 clk = 0;
 #3 start = 1;
-#500 $finish;
+#100 $finish;
 end
 always #5 clk = ~clk;
 initial 
 begin 
     #17 data_in = 17;
-    #5  data_in = 5;
+    #10  data_in = 5;
 end
 
 initial begin
-    //$monitor ($time, "%d %b", done);
+   $monitor ($time,"%d %b",MUL.y, done);
     $dumpfile("mul.vcd");
     $dumpvars(0, Mul_test);
 end
