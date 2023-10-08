@@ -6,7 +6,7 @@
 // AUTHOR : KARTHIK S
 // *******************************************************
 
-module RAM_1 (addr, data_in, data_out, write_enable, cs, read_enable, clk); 
+module RAM_1 (addr, data_in, data_out, write_enable, cs, read_enable, clk, Data); 
 
    parameter add_size = 10;                       // 10 address lines
    parameter word_size = 8;                       // 8 bit data
@@ -17,7 +17,7 @@ module RAM_1 (addr, data_in, data_out, write_enable, cs, read_enable, clk);
    input [word_size-1:0] data_in;                 // input data
    output [word_size-1:0] Data;                                   // output data
    output  reg [word_size-1:0] data_out;          // output data for procedural block
-    tri [7:0] bus;                                 // bidirectional bus
+   // tri [7:0] bus;                                 // bidirectional bus
 
    reg [word_size-1:0] mem [memory_size-1:0];       // memory array
 
@@ -30,12 +30,12 @@ module RAM_1 (addr, data_in, data_out, write_enable, cs, read_enable, clk);
          end
    end
     always @(posedge clk) begin     
-        if (cs && read_enable && !write_enable) begin                // read operation = If Read is enable then read data from memory
+        if (cs && read_enable && !write_enable) begin // read operation = If Read is enable then read data from memory
             data_out <= mem[addr];             // read data from memory
          end
       end    
 
-   assign bus = read_enable ? Data : 8'bz;         // bidirectional bus
-   assign data_in = write_enable ? bus : 8'bz;     // bidirectional bus
+   //assign bus = read_enable ? Data : 8'bz;         // bidirectional bus
+   //assign data_in = write_enable ? bus : 8'bz;     // bidirectional bus
 
     endmodule

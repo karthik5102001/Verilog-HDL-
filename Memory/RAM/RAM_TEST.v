@@ -13,39 +13,35 @@ module RAM_test;
    wire [word_size-1:0] Data;                                   // output data
    wire [word_size-1:0] data_out;          // output data for procedural block
    tri [7:0] bus; 
-   integer k, myseed;
+   //integer myseed =  36;
 
-   RAM_1 RAM_1_inst (addr, data_in, data_out, write_enable, cs, read_enable, clk);
-   
-   // assign clk = 1'b0;
-   // always #5 clk = ~clk;
-
+   RAM_1 RAM_1_inst (addr, data_in, data_out, write_enable, cs, read_enable, clk, Data);
    initial begin
-    for (k=0; k<= 1023 ; k=k+1) begin
-      data_in = (k+k) % 256; 
+      clk = 1'b1;
+   forever begin
+      #5 clk <= ~clk;
+    end
+   end
+     
+   initial begin               // lets put only one value in memory at location 0
       read_enable = 0;
         write_enable = 1;
         cs = 1;
-
+        read_enable = 0;
+        addr = 0;
+        data_in = 7; 
+                               // Now we extract the data from memory from location 0
       #2 write_enable = 0;
-        #2 cs = 0;
+        #2 cs = 1;
         #2 read_enable = 1;
-        #2 addr = k;
+        #2 addr = 0;
          end
-
-         repeat (20)
-          begin
-            #2 addr = $random(myseed) % memory_size-1;
-            write_enable = 0;
-            cs = 1;
-            read_enable = 1;
-            $display ("addr = %d, data_out = %d", addr, Data);
-          end
+    initial begin
+    //$display ("addr = %d, data_out = %d", addr, Data);
+    $dumpfile("RAM_test.vcd");
+    $dumpvars(0, RAM_test);
+    $monitor ( $time," addr = %d, data_in = %d, data_out = %d", addr, data_in, Data);
+    #100 $finish;
     end
-    initial myseed = 35; 
-  
-  //   $dumpfile("RAM_test.vcd");
-   //     $dumpvars(0, RAM_test);
-   // $finish;
 
     endmodule
