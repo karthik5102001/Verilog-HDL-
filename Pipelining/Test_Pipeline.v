@@ -1,5 +1,6 @@
+// Testbench for Basic_Pipelining.v
 `include"Basic_Pipelining.v"
-//`timescale 10ps/1ps
+`timescale 10ps/1ps
 
 module Test_pipe;
 
