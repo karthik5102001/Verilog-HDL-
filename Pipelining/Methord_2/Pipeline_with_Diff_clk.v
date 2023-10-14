@@ -1,3 +1,14 @@
+// FILE NAME :  Pipeline_with_Diff_clk.v
+// TYPE : Verilog
+// *******************************************************
+// DESCRIPTION : Pipeline with different clock
+// *******************************************************
+// AUTHOR : KARTHIK S
+// *******************************************************
+// DATE : 12/10/2023
+// *******************************************************
+
+
 module pipelining_2 (Zout, rs1, rs2, rd, func, addr, CLK_1, CLK_2);
 
 input [3:0] rs1, rs2, rd, func;
