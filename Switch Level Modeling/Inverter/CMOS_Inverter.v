@@ -16,8 +16,8 @@ output Z;
 supply0 Gnd;
 supply1 Vdd;
 
-pmos p1(f, Vdd, A);
-nmos n1(Z, Gnd, A);
+pmos p1(Z, Vdd, A);   // Z is the output of the inverter and A is the input of the inverter and Vdd is the power supply
+nmos n1(Z, Gnd, A);   // Z is the output of the inverter and A is the input of the inverter and Gnd is the ground supply
 
 endmodule
 
