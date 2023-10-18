@@ -10,7 +10,8 @@
 
 
 
-`include "Full_Adder.v"
+//`include "Full_Adder.v"
+`include "ALL_Module.v"
 `timescale 10ps/1ps
 
 module Test_FULL_ADDER;
@@ -24,9 +25,10 @@ module Test_FULL_ADDER;
     initial begin
         for (i=0; i<8; i=i+1)
         #5 {a,b,cin} = i;
-        $display ("Inputs=%b, sum=%b, carry=%b", {a,b,cin}, sum, carry);
+        $display("Inputs=%b, sum=%b, carry=%b", {a,b,cin}, sum, carry);
     end
-    initial begin 
+
+    initial begin    
         $dumpfile("Full_Adder.vcd");
         $dumpvars(0, Test_FULL_ADDER);
     end
