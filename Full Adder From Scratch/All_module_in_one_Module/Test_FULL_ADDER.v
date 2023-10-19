@@ -25,12 +25,12 @@ module Test_FULL_ADDER;
     initial begin
         for (i=0; i<8; i=i+1)
         #5 {a,b,cin} = i;
-        $display("Inputs=%b, sum=%b, carry=%b", {a,b,cin}, sum, carry);
+        $display("Inputs=%3b, sum=%3b, carry=%3b", {a,b,cin}, sum, carry);
     end
 
-    initial begin    
+    /*initial begin    
         $dumpfile("Full_Adder.vcd");
         $dumpvars(0, Test_FULL_ADDER);
-    end
+    end */
     
 endmodule
