@@ -1,0 +1,25 @@
+$date
+	Wed Dec 27 18:14:34 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Timer_LED $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var reg 4 # count [3:0] $end
+$var reg 1 $ led $end
+$var reg 1 % led_delay $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x%
+x$
+bx #
+z"
+z!
+$end
