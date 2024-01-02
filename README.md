@@ -43,5 +43,5 @@ GTKWave is the best free wave viewer and is the recommended viewer by Icarus Ver
 
 ![GTKWave](https://upload.wikimedia.org/wikipedia/commons/6/68/Gtkwave_256x256x32.png)
 
-![NPTEL](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FNPTELNoc%2F&psig=AOvVaw2wW974vZCqNMZKSJZnSUee&ust=1704287711433000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDek8_kvoMDFQAAAAAdAAAAABAQ)
+![NPTEL]([https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FNPTELNoc%2F&psig=AOvVaw2wW974vZCqNMZKSJZnSUee&ust=1704287711433000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDek8_kvoMDFQAAAAAdAAAAABAQ](https://www.google.com/url?sa=i&url=https%3A%2F%2Fggnindia.dronacharya.info%2FLearning-Partner%2FNPTEL.aspx&psig=AOvVaw2OvDdD333eC5-FibYeYA3l&ust=1704287835119000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCg9YzlvoMDFQAAAAAdAAAAABAD)https://www.google.com/url?sa=i&url=https%3A%2F%2Fggnindia.dronacharya.info%2FLearning-Partner%2FNPTEL.aspx&psig=AOvVaw2OvDdD333eC5-FibYeYA3l&ust=1704287835119000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCg9YzlvoMDFQAAAAAdAAAAABAD)
 
