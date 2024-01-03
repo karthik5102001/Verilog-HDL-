@@ -11,7 +11,7 @@ This Repository is for self development and usage of code for developing further
 To deploy this Iverilog to run simulation
 
 ```bash
-  iverilog -o .\<name of the file>.vvp .\<name of the file>.v
+  iverilog -o <name of the file>.vvp <name of the file>.v
 ```
 To deploy the vvp file 
 
