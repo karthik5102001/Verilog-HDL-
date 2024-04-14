@@ -1,7 +1,7 @@
 
 # Verilog HDL
 
-Making best use of online resource to learn more about Verilog
+Making best use of online resource to learn more about Verilog.
 
 
 ## Abstract
